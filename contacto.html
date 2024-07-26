@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <head>
+
+            <style>
+                body{
+                    font-family: arial, Arial, Helvetica, sans-serif; /*FUENTES CLASICAS */
+                    font-size: 12px; /*TAMAÑO DE LETRA */
+                }
+                input[type="text"], input[type="email"], select {
+                    background: white;  /*FONDO BLANCO*/
+                    height: 30px;   /*ALTURA */
+                    border-radius: 6px;   /*BORDE REDONDEADO */
+                    border: 1px solid #777; /* BORDE GRIS */  
+                    margin-bottom: 15px; /*margen inferior */             
+                    
+                }
+            
+                form {
+                    display: flex;
+                    flex-direction: column;
+                }
+                label{ 
+                    font-weight: bold; /*NEGRITA */
+                }
+            </style>
+
+        </head>
+
+        <body>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre"/>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" placeholder="Ingrese sus apellidos">
+
+                <label for="email">Email:</label>
+                <input type="text" id="Email" placeholder="Ingrese su correo "> 
+                <label for="servicios_helados"> Seleccione servicio:</label>
+                <select id="servicios_helados">
+                    <option value="1">Preparado de helados de chocolate</option>
+                    <option value="2">Preparado de helados de fresa</option>
+                    <option value="3">Preparado de helados de vainilla</option>
+                </select>
+        
+                <label for="mensaje">Extras para tu servicio:</label>
+                <textarea id="mensaje"></textarea>
+
+                <label>Pago al contado <input type="radio" valvue="CONT" name="tipo_pago"> </label>
+                <label>Pago con tarjeta <input type="radio" value="TAR" name="tipo_pago"> </label>
+            </form>
+        </body>
+    </head>
+</html>
